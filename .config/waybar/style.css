@@ -1,0 +1,67 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 13px;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: #141320;
+    color: #cdd6f4;
+}
+
+#workspaces button {
+    padding: 0 6px;
+    color: #6c7086;
+    background: transparent;
+}
+
+#workspaces button.nonempty {
+    color: #a6adc8;
+}
+
+#workspaces button.active {
+    color: #cdd6f4;
+    border-bottom: 2px solid #89b4fa;
+}
+
+#workspaces button:hover {
+    color: #cdd6f4;
+    background: #313244;
+}
+
+#window {
+    padding: 0 8px;
+    color: #89b4fa;
+}
+
+#mpris {
+    padding: 0 8px;
+    color: #89b4fa;
+}
+
+#custom-mullvad {
+    padding: 0 8px;
+    color: #89b4fa;
+}
+
+#cpu {
+    padding: 0 8px;
+    color: #89b4fa;
+}
+
+#memory {
+    padding: 0 8px;
+    color: #89b4fa;
+}
+
+#clock {
+    padding: 0 8px;
+    color: #89b4fa;
+}
+
+#pulseaudio {
+    padding: 0 8px;
+    color: #89b4fa;
+}

@@ -1,0 +1,53 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 28,
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-center": ["mpris"],
+    "modules-right": ["custom/mullvad", "pulseaudio", "cpu", "memory", "clock"],
+    "hyprland/workspaces": {
+        "format": "{id}",
+        "on-click": "activate",
+        "separate-outputs": true,
+        "active-only": false,
+        "persistent-workspaces": {
+            "HDMI-A-1": [1, 2, 3, 4, 5],
+            "HDMI-A-2": [6, 7, 8, 9, 10]
+        }
+    },
+    "hyprland/window": {
+        "format": "{}",
+        "separate-outputs": true,
+        "max-length": 25
+    },
+    "mpris": {
+        "format": "{player_icon} {title} - {artist}",
+        "player-icons": {
+            "default": "▶"
+        },
+        "max-length": 20
+    },
+    "pulseaudio": {
+        "format": "[ VOL: {volume}% ]",
+        "on-click": "pavucontrol",
+        "scroll-step": 5
+    },
+    "custom/mullvad": {
+        "exec": "mullvad status | grep -q 'Connected' && echo \"[ $(mullvad status | grep -oP 'relay: \\K[^,]+'||echo 'VPN') ]\" || echo '[ 󰖪 off ]'",
+        "on-click": "OZONE_PLATFORM=wayland /usr/bin/mullvad-vpn &",
+        "interval": 5,
+        "tooltip": false
+    },
+    "cpu": {
+        "format": "[ CPU: {usage}% ]",
+        "interval": 2
+    },
+    "memory": {
+        "format": "[ RAM: {}% ]",
+        "interval": 2
+    },
+    "clock": {
+        "format": "[ {:%H:%M} ]",
+        "tooltip-format": "{:%A, %B %d %Y}"
+    }
+}

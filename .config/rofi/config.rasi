@@ -1,0 +1,11 @@
+configuration {
+    display-drun:     "Apps";
+    display-run:      "Run";
+    display-window:   "Windows";
+    display-ssh:      "SSH";
+    display-filebrowser: "Files";
+    kb-mode-next:     "Ctrl+Tab";
+    kb-mode-previous: "Ctrl+Shift+Tab";
+    modes:            "drun,run,window,filebrowser";
+}
+@theme "/home/sol/.config/rofi/catppuccin-default.rasi"
