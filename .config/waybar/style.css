@@ -5,62 +5,59 @@
     border-radius: 0;
     min-height: 0;
 }
-
 window#waybar {
     background-color: #141320;
     color: #cdd6f4;
 }
-
 #workspaces button {
     padding: 0 6px;
-    color: #6c7086;
+    color: #cdd6f4;
     background: transparent;
 }
-
-#workspaces button.nonempty {
-    color: #a6adc8;
+#workspaces button.empty {
+    color: #6c7086;
 }
-
 #workspaces button.active {
     color: #cdd6f4;
     border-bottom: 2px solid #89b4fa;
 }
-
 #workspaces button:hover {
     color: #cdd6f4;
     background: #313244;
 }
-
 #window {
     padding: 0 8px;
     color: #89b4fa;
 }
-
 #mpris {
     padding: 0 8px;
     color: #89b4fa;
 }
-
 #custom-mullvad {
     padding: 0 8px;
     color: #89b4fa;
 }
-
-#cpu {
+#custom-cpu {
     padding: 0 8px;
     color: #89b4fa;
 }
-
 #memory {
     padding: 0 8px;
     color: #89b4fa;
 }
-
 #clock {
     padding: 0 8px;
     color: #89b4fa;
 }
-
+#clock tooltip {
+    border-radius: 15px;
+    background: #181825;
+}
+#clock tooltip label {
+    color: #cdd6f4;
+    font-weight: 700;
+    padding: 6px 12px;
+}
 #pulseaudio {
     padding: 0 8px;
     color: #89b4fa;

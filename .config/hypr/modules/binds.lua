@@ -26,7 +26,9 @@ hl.bind(mainMod .. " + T", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("wlogout"))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("/home/sol/.config/waybar/scripts/launch.sh"))
-hl.bind(mainMod .. " + V", hl.dsp.exec_cmd([[grim -g "$(slurp)" - | wl-copy]]))
+hl.bind(mainMod .. " + S", hl.dsp.exec_cmd([[grim -g "$(slurp)" - | wl-copy]]))
+hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("hypremoji"))
+hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("hyprpicker| wl-copy"))
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
@@ -64,7 +66,7 @@ hl.bind(mainMod .. " + ALT + SHIFT + 4", hl.dsp.window.move({ workspace = 9 }))
 hl.bind(mainMod .. " + ALT + SHIFT + 5", hl.dsp.window.move({ workspace = 10 }))
 
 -- Example special workspace (scratchpad)
-hl.bind(mainMod .. " + S", hl.dsp.workspace.toggle_special("magic"))
+hl.bind(mainMod .. " + V", hl.dsp.workspace.toggle_special("magic"))
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 
 -- Scroll through existing workspaces with mainMod + scroll

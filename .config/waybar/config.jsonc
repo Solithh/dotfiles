@@ -4,7 +4,7 @@
     "height": 28,
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
     "modules-center": ["mpris"],
-    "modules-right": ["custom/mullvad", "pulseaudio", "cpu", "memory", "clock"],
+    "modules-right": ["custom/mullvad", "pulseaudio", "custom/cpu", "memory", "clock"],
     "hyprland/workspaces": {
         "format": "{id}",
         "on-click": "activate",
@@ -18,7 +18,12 @@
     "hyprland/window": {
         "format": "{}",
         "separate-outputs": true,
-        "max-length": 25
+        "max-length": 25,
+        "rewrite": {
+            "(.*) — Zen Browser": "Zen Browser",
+            "(.*) - Spotify": "Spotify",
+            "(.*) - Haruna": "Haruna"
+        }
     },
     "mpris": {
         "format": "{player_icon} {title} - {artist}",
@@ -38,16 +43,18 @@
         "interval": 5,
         "tooltip": false
     },
-    "cpu": {
-        "format": "[ CPU: {usage}% ]",
-        "interval": 2
-    },
+"custom/cpu": {
+    "exec": "~/.config/waybar/scripts/cpu.py",
+    "return-type": "json",
+    "interval": 2
+},
     "memory": {
         "format": "[ RAM: {}% ]",
         "interval": 2
     },
-    "clock": {
-        "format": "[ {:%H:%M} ]",
-        "tooltip-format": "{:%A, %B %d %Y}"
+"clock": {
+    "format": "[ {:%H:%M} ]",
+    "tooltip-format": "{:%A, %B %d %Y}",
+    "on-click": "kitty --class=calcurse -e calcurse"
     }
 }

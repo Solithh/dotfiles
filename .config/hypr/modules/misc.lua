@@ -8,4 +8,3 @@ hl.config({
 		disable_splash_rendering = true,
 	},
 })
-
