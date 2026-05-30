@@ -26,11 +26,10 @@
         }
     },
     "mpris": {
-        "format": "{player_icon} {title} - {artist}",
-        "player-icons": {
-            "default": "▶"
-        },
-        "max-length": 20
+        "format": "  {artist} - {title} ",
+        "format-paused": " 󰐊 {artist} - {title} ",
+        "max-length": 37,
+        "tooltip": true
     },
     "pulseaudio": {
         "format": "[ VOL: {volume}% ]",
