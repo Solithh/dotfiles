@@ -4,13 +4,13 @@
     "source": "Arch_small",
     "type": "auto",
         "padding": {"top": 2, "left": 1},
-    "color": {"1": "#89b4fa", "2": "#89b4fa"}
+    "color": {"1": "#B4BEFE", "2": "#B4BEFE"}
 },
     "display": {
         "separator": "  ",
         "color": {
-            "keys": "#89b4fa",
-            "title": "#89b4fa"
+            "keys": "#B4BEFE",
+            "title": "#B4BEFE"
         }
     },
     "modules": [
@@ -19,38 +19,38 @@
 
             "type": "os",
             "key": "  os",
-            "keyColor": "#89b4fa",
+            "keyColor": "#B4BEFE",
             "format": "{2} {9}"
         },
         "break",
         {
             "type": "kernel",
             "key": "  kernel",
-            "keyColor": "#89b4fa"
+            "keyColor": "#B4BEFE"
         },
         "break",
         {
             "type": "packages",
             "key": "󰮯  packages",
-            "keyColor": "#89b4fa"
+            "keyColor": "#B4BEFE"
         },
         "break",
         {
             "type": "shell",
             "key": "  shell",
-            "keyColor": "#89b4fa"
+            "keyColor": "#B4BEFE"
         },
         "break",
         {
             "type": "uptime",
             "key": "  uptime",
-            "keyColor": "#89b4fa"
+            "keyColor": "#B4BEFE"
         },
         "break",
         {
             "type": "memory",
             "key": "  memory",
-            "keyColor": "#89b4fa"
+            "keyColor": "#B4BEFE"
         }
     ]
 }
